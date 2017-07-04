@@ -17,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  font-size: $font-size-base;
+  font-size: 1em;
 }
 
 /* HTML5 display definitions
@@ -395,7 +395,7 @@ legend, label, .label {
   border: 0;
   padding: 0.65em 0 1.5em 0;
   margin: 0 0.25em 0 0;
-  font-family: $font-heading;
+  font-family: "Open Sans";
   line-height: 1.4em;
   text-transform: none;
   font-weight: normal;
@@ -417,7 +417,7 @@ legend.larger span {
 }
 legend span.form-content {
   font-size: 1.15rem;
-  font-family: $font-light;
+  font-family: "Open Sans Light";
   margin: 0;
   padding: 0;
   line-height: 1em;
