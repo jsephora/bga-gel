@@ -3,13 +3,13 @@ layout: default
 title: Sample page
 sidemenu:
   - title: Home
-    url: #
-    active: true
+    url: &#35;
+    active: true
   - title: Option 2
-    url: #
-    active: false
+    url: &#35;
+    active: false
   - title: Option 3
-    url: #
-    active: false
+    url: &#35;
+    active: false
 ---
 This is a sample page. Enjoy!
