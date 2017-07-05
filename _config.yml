@@ -1,5 +1,11 @@
 name: BGA-gel
 markdown: kramdown
+
+# ** uncomment and add subdirectory to render to github pages
+# collections:
+#   subdirname:
+#     output: true
+
 topnav:
   - title: Home
     url: "#"
