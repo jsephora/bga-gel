@@ -1,4 +1,19 @@
 name: BGA-gel
 markdown: kramdown
-topnav: main-topnav.html
-sidebar: main-sidebar.html
+topnav:
+  - title: Home
+    url: "#"
+  - title: Settings
+    url: "#"
+  - title: Profile
+    url: "#"
+  - title: Help
+    url: "#"
+sidemenu:
+  - title: Home
+    url: "#"
+  - title: Option 2
+    url: "#"
+  - title: Option 3
+    url: "#"
+sidemenuactive: Home
