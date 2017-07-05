@@ -1,7 +1,9 @@
 {% if page.sidemenu != null %}
+<p>begin</p>
   <ul class="nav nav-sidebar">
     {% for item in page.sidemenu %}
         <li><a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
+</p>end</p>
 {% endif %}
