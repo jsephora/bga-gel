@@ -1,6 +1,7 @@
+{% if page.topnav != null %}{% assign _topnav = page.topnav %}
+{% else %}{% assign _topnav = site.topnav %}{% endif %}
 <ul class="nav navbar-nav navbar-right">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Settings</a></li>
-  <li><a href="#">Profile</a></li>
-  <li><a href="#">Help</a></li>
+  {% for item in _topnav %}
+	<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  {% endfor %}
 </ul>

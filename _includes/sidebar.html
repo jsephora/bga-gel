@@ -1,9 +1,13 @@
-{% if page.sidemenu != null %}
-<p>begin</p>
-  <ul class="nav nav-sidebar">
-    {% for item in page.sidemenu %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-    {% endfor %}
-  </ul>
-</p>end</p>
-{% endif %}
+{% if page.sidemenu != null %}{% assign _sidemenu = page.sidemenu %}
+{% else %}{% assign _sidemenu = site.sidemenu %}{% endif %}
+{% if page.sidemenuactive != null %}{% assign _active = page.sidemenuactive %}
+{% else %}{% assign _active = site.sidemenuactive %}{% endif %}
+<ul class="nav nav-sidebar">
+  {% for item in _sidemenu %}
+	{% if item.title == _active %}
+		<li class="active"><a href="{{ item.url }}">{{ item.title }}</a><span class="sr-only"> (current)</span></li>
+	{% else %}
+		<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+	{% endif %}
+  {% endfor %}
+</ul>
