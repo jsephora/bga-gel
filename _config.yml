@@ -1,2 +1,4 @@
 name: BGA-gel
 markdown: kramdown
+topnav: main-topnav.html
+sidebar: main-sidebar.html
